@@ -21,8 +21,9 @@ launch a new server and install npm, nodejs, and git in the server ------ create
 Now create a pipeline give name and description ---- Build Triggers ----> Github hook triggers ---- pipeline syntax ----- in sample step click on checkout from version control ---
 ---- and paste the git repository url ---- select the branch on which we pushed the code ----- Generate Pipeline Script ----- Copy the script ----------
 
-below is the code of the whole pipeline ------> 
+below is the code of the whole pipeline ------>
 
+```groovy
 pipeline {
     agent any     // it means if we are deploying the code of the available server (jenkins works on master and slave architecture)
     tools {
